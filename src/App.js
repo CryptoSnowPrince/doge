@@ -4,6 +4,7 @@ import WalletConnectProvider from "@walletconnect/web3-provider";
 import { providers, ethers } from "ethers";
 import Web3 from "web3";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useQueryParam } from "use-params-query";
 import config from "./contracts/config";
 import ABI from "./contracts/abi/Tminer.json";
 import DCABI from "./contracts/abi/dctoken.json";
@@ -77,7 +78,11 @@ function reducer(state, action) {
 }
 
 function App() {
+  const ref = useQueryParam("ref");
+  console.log("ref: ", ref)
+
   const queryParams = new URLSearchParams(window.location.search);
+  console.log("queryParams: ", queryParams.get('ref'))
   const adminWalletAddress = queryParams.get('ref') ? queryParams.get('ref') : "0x0000000000000000000000000000000000000000";
   const [showAccountAddress, setShowAccountAddress] = useState("");
   const [account, setAccount] = useState("");

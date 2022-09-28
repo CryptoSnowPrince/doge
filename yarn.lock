@@ -12862,6 +12862,11 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
+use-params-query@^0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/use-params-query/-/use-params-query-0.1.11.tgz#d72ec32eba1efada11f09b112b20fc0b8bd9ef15"
+  integrity sha512-85gsoynXRpApRNxNxA8Mg6q0vI4TzBrH1kFg66s+hxyaOkRaI0L9QliBed7fmDL5qs9qcm5fEWB0cbBm8BfFRg==
+
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
